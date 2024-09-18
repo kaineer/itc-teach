@@ -5,3 +5,5 @@ const lt = function(v, message = ">") {
 
 lt("string");
 lt(typeof 1);
+
+/// Приведение в число/из числа
