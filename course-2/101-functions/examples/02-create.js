@@ -12,6 +12,10 @@ function namedFunction() {
 const arrowFunction = () => "arrow function";
 
 // 4.
-const fn = {
+const memberFunction = {
   memberFunction() {}
 }.memberFunction;
+
+[anonymousFunction, namedFunction, arrowFunction, memberFunction].forEach((f) => {
+  console.log(typeof f);
+});
