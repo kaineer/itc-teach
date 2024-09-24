@@ -29,5 +29,5 @@ const schoolFormatter = (sign) => (i, j, value) => {
 }
 
 table(schoolFormatter("+"), action)();
-console.log("");
+console.log();
 table(schoolFormatter("x"))();

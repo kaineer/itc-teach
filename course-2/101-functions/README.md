@@ -19,16 +19,34 @@
 
    * [Создаем функции четырьмя способами](./examples/02-create.js)
 
- * Варианты использования
+## Варианты использования
 
    * [Просто вызываем](./examples/03-usage-call.js)
    * [Передаем как колбэк](./examples/03-usage-callback.js)
    * [Создаем функцию из нескольких](./examples/03-usage-compose.js)
    * [Вызов при помощи call и apply](./examples/03-usage-call-apply.js)
 
- * Свойства функций
+## Свойства функций
 
-   * name
-   * length
+ * [name](./examples/04-function-name.js)
+ * [length](./examples/04-function-length.js)
+
+## Основные части функции
+
+ * Имя функции
+ * Параметры функции
+ * Основное тело функции
+ * Возвращение значения
+
+./examples/06-function-parts.js
+
+## Процесс вызова функции
+
+ * параметры функции
+ * аргументы функции
+ * [параметры функции, как локальные переменные](./examples/05-call-function.js)
+ * [передача сложных объектов "по ссылке"](./examples/05-call-function-ref.js)
+
+
 
 
