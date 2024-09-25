@@ -17,14 +17,14 @@
 
 ## Варианты создания
 
-   * [Создаем функции четырьмя способами](./examples/02-create.js)
+ * [Создаем функции четырьмя способами](./examples/02-create.js)
 
 ## Варианты использования
 
-   * [Просто вызываем](./examples/03-usage-call.js)
-   * [Передаем как колбэк](./examples/03-usage-callback.js)
-   * [Создаем функцию из нескольких](./examples/03-usage-compose.js)
-   * [Вызов при помощи call и apply](./examples/03-usage-call-apply.js)
+ * [Просто вызываем](./examples/03-usage-call.js)
+ * [Передаем как колбэк](./examples/03-usage-callback.js)
+ * [Создаем функцию из нескольких](./examples/03-usage-compose.js)
+ * [Вызов при помощи call и apply](./examples/03-usage-call-apply.js)
 
 ## Свойства функций
 
@@ -46,7 +46,4 @@
  * аргументы функции
  * [параметры функции, как локальные переменные](./examples/05-call-function.js)
  * [передача сложных объектов "по ссылке"](./examples/05-call-function-ref.js)
-
-
-
 

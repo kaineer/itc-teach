@@ -10,3 +10,4 @@ const f = function functionName() {
 
 console.log(f.name);
 
+console.log('anonymousFunctionName: ' + (() => 0).name); // => ''

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение квадратного уравнения</title>
+  <script src="./07-square-equation.js"></script>
+  <style>
+    html {
+      margin: 0; padding: 0;
+    }
+    body {
+      margin: 24px;
+    }
+    input, body, button {
+      font-size: 36px;
+    }
+    input, button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <label for="a">a: <input name="a" type="text"></label><br>
+    <label for="b">b: <input name="b" type="text"></label><br>
+    <label for="c">c: <input name="c" type="text"></label><br>
+    <button id="solve">Решай</button>
+  </form>
+  <div id="solution"></div>
+  <div id="x1"></div>
+  <div id="x2"></div>
+
+  <script>
+    document.querySelector("#solve").addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const first = (selector) => document.querySelector(selector);
+
+      const a = first("input[name='a']");
+      const b = first("input[name='b']");
+      const c = first("input[name='c']");
+      const solution = first("#solution");
+      const x1 = first("#x1");
+      const x2 = first("#x2");
+
+      const result = solveEquation(
+        Number(a.value), Number(b.value), Number(c.value));
+
+      solution.innerHTML = result.msg;
+
+      if ("x" in result) {
+        x1.innerHTML = result.x;
+        x2.innerHTML = '';
+      } else if ("x1" in result) {
+        x1.innerHTML = result.x1;
+        x2.innerHTML = result.x2;
+      } else {
+        x1.innerHTML = '';
+        x2.innerHTML = '';
+      }
+    });
+  </script>
+</body>
+</html>
